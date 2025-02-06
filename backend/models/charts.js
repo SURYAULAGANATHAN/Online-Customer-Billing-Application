@@ -14,6 +14,7 @@ const chartSchema = new Schema({
   }
 });
 
+// Create a model based on the schema
 const Chart = mongoose.model('Chart', chartSchema);
 
 module.exports = Chart;
