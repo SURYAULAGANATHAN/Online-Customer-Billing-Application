@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-// Define the schema for the charts collection
 const chartSchema = new Schema({
   chart_name: {
     type: String,
@@ -15,7 +14,6 @@ const chartSchema = new Schema({
   }
 });
 
-// Create a model based on the schema
 const Chart = mongoose.model('Chart', chartSchema);
 
 module.exports = Chart;
